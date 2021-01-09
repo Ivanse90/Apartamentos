@@ -1,0 +1,14 @@
+#map { 
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px #888;
+ }
+ #search { 
+    color:antiquewhite
+ }
+ .search { 
+    color:antiquewhite
+ }
+ #PolygonStyle{
+   color: salmon
+};

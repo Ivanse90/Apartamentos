@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Geovisor</title>
+    <!-- Pluguin -->
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+    <link rel="stylesheet" href="Style.css"/>
+    <link rel="stylesheet" href="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.css" />
+    <script src="https://ppete2.github.io/Leaflet.PolylineMeasure/Leaflet.PolylineMeasure.js"></script>
+    <script src="Measure/leaflet-measure.js"></script>
+    <script src="Measure/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="Measure/leaflet-measure.css"/>
+    <script src="ZoomBox/dist/leaflet-control-boxzoom.js"></script>
+    <link rel="stylesheet" href="ZoomBox/dist/leaflet-control-boxzoom.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="ZoomExtend/leaflet.zoomhome.css"/>
+    <script src="ZoomExtend/leaflet.zoomhome.min.js"></script>
+    <link rel="stylesheet" href="Pan/L.Control.Pan.css" />
+    <link rel="stylesheet" href="Pan/L.Control.Pan.ie.css"/>
+    <script src="Pan/L.Control.Pan.js" ></script>    
+    <script src="Pan/leaflet-tilejson.js"></script>
+    <link rel="stylesheet" href="Pan/style.css" />
+    <link rel="stylesheet" href="Localizacion/dist/L.Control.Locate.min.css" />
+    <script src="Localizacion/src/L.Control.Locate.js" ></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.4.10/leaflet.draw.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.4.10/leaflet.draw.js'></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="Boostrap/css/bootstrap.min.css">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Boostrap/js/bootstrap.js"></script>
+    <!-- Geojson -->
+    <script src="https://unpkg.com/geojson-vt@3.2.0/geojson-vt.js"></script>
+    <script src="Zonas_de_Interes/Apartamentos.js"></script>
+
+</head>
+<body>
+    <!--Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Geovisor Apartamentos para inversion</a>
+          <form class="d-flex input-group w-auto">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Type query"
+              aria-label="Search"
+            />
+            <button type="button" class="btn btn-outline-light">Search</button>
+          </form>
+        </div>
+    </nav>
+    <div id="map"></div>
+    <script src="MyMapa.js"></script>
+
+</body>
+</html>
