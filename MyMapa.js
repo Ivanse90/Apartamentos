@@ -4,7 +4,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 //Pan Tool
-L.control.pan({position:'bottomright'}).addTo(map);
+L.control.pan({position:'topright'}).addTo(map);
 //Zoom Extense
 var zoomHome = L.Control.zoomHome();
 zoomHome.addTo(map);
@@ -24,6 +24,7 @@ L.control.scale().addTo(map);
 // measure tool
 var measureControl = new L.Control.Measure();
 measureControl.addTo(map);
+L.control.polylineMeasure({position:'topright'}).addTo(map);
 //localization 
 L.control.locate({position:'topright'}).addTo(map);
 //draw marker
